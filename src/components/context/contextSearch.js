@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
     },
   }))
 
-const BuscadorContext = React.createContext({
+const ContextSearch = React.createContext({
     search: "",
     setSearch: () => {}, 
 });
@@ -69,13 +69,13 @@ export function BuscadorProvider(props) {
     }), [search]);
 
     return (
-        <BuscadorContext.Provider value={result} {...props} />
+        <ContextSearch.Provider value={result} {...props} />
     )
 }
 
 export function BuscadorConsumer(props) {
     const classes = useStyles(props);
-    const { search, setSearch } = useContext(BuscadorContext);
+    const { search, setSearch } = useContext(ContextSearch);
     return(  
         <div className="center-a" style={{paddingTop: '100px'}}>
             <TextField className={classes.textField} type="text" onChange={(e) => setSearch(e.target.value)}/>        
@@ -84,6 +84,6 @@ export function BuscadorConsumer(props) {
 }
 
 export function Result() {
-    const datos = useContext(BuscadorContext);
+    const datos = useContext(ContextSearch);
     return datos;
 }

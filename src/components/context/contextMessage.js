@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 
-const MessageContext = React.createContext({
+const ContextMessage = React.createContext({
     pokemons: 1126,
     setPokemons: () => {}, 
 });
@@ -13,11 +13,11 @@ export function MessageProvider(props) {
     }), [pokemons]);
 
     return (
-        <MessageContext.Provider value={result} {...props} />
+        <ContextMessage.Provider value={result} {...props} />
     )
 }
 
 export function Number() {
-    const datos = useContext(MessageContext);
+    const datos = useContext(ContextMessage);
     return datos;
 }
