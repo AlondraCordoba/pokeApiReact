@@ -62,7 +62,7 @@ const ContextSearch = React.createContext({
     setSearch: () => {}, 
 });
 
-export function BuscadorProvider(props) {
+export function SearchProvider(props) {
     const [search, setSearch] = useState("Hola");
     const result = React.useMemo(() => ({
         search, setSearch
@@ -73,13 +73,13 @@ export function BuscadorProvider(props) {
     )
 }
 
-export function BuscadorConsumer(props) {
+export function SearchConsumer(props) {
     const classes = useStyles(props);
     const { search, setSearch } = useContext(ContextSearch);
-    return(  
+    return(
         <div className="center-a" style={{paddingTop: '100px'}}>
             <TextField className={classes.textField} type="text" onChange={(e) => setSearch(e.target.value)}/>        
-        </div>                
+        </div>
     )
 }
 
