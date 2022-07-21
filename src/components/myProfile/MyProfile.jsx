@@ -1,4 +1,5 @@
 import React from "react";
+import photo from "../../assets/img/photoProfile.jpg";
 import "./MyProfile.css";
 
 const Profile = () => {
@@ -7,7 +8,8 @@ const Profile = () => {
       <div className="perfil">
         <img
           className="foto-perfil"
-          src="../../assets/img/photoProfile.jpg"
+          src={photo}
+          alt="Photo profile"
           width={130}
           height={130}
         />

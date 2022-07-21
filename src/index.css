@@ -1,14 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif !important;
+    padding: 0px;
+}
+
 body {
-  background-image: url('https://free4kwallpapers.com/uploads/originals/2018/06/18/created-a-3d-render-of-a-pokemon-trophy-in-the-grass-wallpaper.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+ /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif;*/
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
+  background: #4e54c8;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+}
+
+.context {
+  width: 100%;
+  position: absolute;
+  top:50vh;
   
+}
+
+.context h1{
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+
+.area{
+  background: #4e54c8;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+}
+
+.circles{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
 }
 
 code {
@@ -29,7 +167,7 @@ code {
 }
 
 .btn-left {
-  /*background-image: url('../public/assets/equipo-amarillo.png');*/
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Emoji_u1f3c3_1f3fd.svg/640px-Emoji_u1f3c3_1f3fd.svg.png');
   background-size: 80%;
   background-position: center center !important;
   background-repeat: no-repeat;
@@ -51,14 +189,14 @@ code {
 }
 
 .btn-right {
- /*background-image: url('../public/assets/equipo-amarillo.png');*/
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a1/Emoji_with_the_emo%21.png');
   background-size: 80%;
   background-position: center center !important;
   background-repeat: no-repeat;
   transform: rotate(-90deg);
   background-color: transparent;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: solid transparent 0px;
   padding: 10px;
@@ -73,19 +211,21 @@ code {
 }
 
 .img-pokemon {
-  border: solid #0097DC 5px;
   border-radius: 15px;
-  background: rgb(196, 239, 186);
-  margin: 10px;
-  box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
+  background: rgba(251, 252, 251, 0.651);
+  margin: 15px;
   position: relative;
+  border-radius: 30px;
+  height: 100px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .img-pokemon:hover {
-  transition: all .2s ease-in-out;
-  transform: translateY(-10px);
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
 .h1-pokemon {
@@ -93,7 +233,7 @@ code {
 }
 
 .golden {
-  background-image: url('https://i.pinimg.com/originals/2d/f0/78/2df078d82dc2c9da66c1928e360c9355.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Star_and_Crescent.svg/640px-Star_and_Crescent.svg.png');
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center center !important;
@@ -112,7 +252,7 @@ code {
 }
 
 .change {
-  /*background-image: url('../public/assets/lucha.png');*/
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Change-icon-02.svg/640px-Change-icon-02.svg.png');
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center center !important;
@@ -148,11 +288,14 @@ code {
 
 .center-a-poke {
   display: flex;
+  width: 60%;
+  margin-left: 30%;
   justify-content: center;
 }
 
 .sidebar {
-  height: 97.2vh;
+  height: 100%;
+  position: fixed;
 }
 
 .app-pokemon {
@@ -197,9 +340,10 @@ code {
 }
 
 .pro-sidebar > .pro-sidebar-inner {
-  background: rgb(30, 30, 30) !important;
-	border: 10px outset #0097DC;
-	color: white;
+  background: #d8d8d8 !important;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	border: 1px outset #d8d8d8;
+	color: black;
   text-align: center;
   font-weight: bold;
 }
