@@ -3,6 +3,7 @@ import React, { Component }  from 'react';
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import './Pokemon.css';
 
 function Pokemon(){    
     const { t, i18n } = useTranslation(['translate']);

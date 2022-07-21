@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React, { Suspense } from "react"
 import { useTranslation } from 'react-i18next';
+import './NotFound.css';
 
 function NotFound(){
     const { t, i18n } = useTranslation(['translate']);

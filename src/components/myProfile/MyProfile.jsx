@@ -1,30 +1,34 @@
 import React from "react";
-import {profilePhoto} from '../../assets/img/photoProfile.jpg';
-import './ProfileHome.css';
-
+import "./MyProfile.css";
 
 const Profile = () => {
-    return (
-      <div className="Profile">
-        <div className="Profile-left">
-          <div className="Profile-image-wrapper">
-            <img src={profilePhoto} alt="" />
+  return (
+    <div className="center-a">
+      <div className="perfil">
+        <img
+          className="foto-perfil"
+          src="../../assets/img/photoProfile.jpg"
+          width={130}
+          height={130}
+        />
+        <br />
+        <div className="Profile">
+          <div className="Profile-left">
+            <div className="Profile-image-wrapper"></div>
+            <strong>
+              <h4>Wendy Alondra Cordoba Esparza</h4>
+              DWI
+              <br />
+              IDGS 9°A
+              <br />
+              191286
+              <br />
+            </strong>
           </div>
-          <h2>Alondra Cordoba</h2>
-          <h3>ICT Student</h3>
-        </div>
-        <div className="Profile-right">
-          <p>
-          I am a student in the career of Information and 
-          Communication Technologies (ICT), I am currently 
-          finishing TSU, then I would like to study engineering 
-          corresponding to my career and if possible work in 
-          this area, this in order to develop myself more in the 
-          personal field.
-          </p>
         </div>
       </div>
-    );
-  };
-  
-  export default Profile;
+    </div>
+  );
+};
+
+export default Profile;
