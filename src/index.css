@@ -167,14 +167,13 @@ code {
 }
 
 .btn-left {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Emoji_u1f3c3_1f3fd.svg/640px-Emoji_u1f3c3_1f3fd.svg.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Map_arrow_black_w.svg/640px-Map_arrow_black_w.svg.png');
   background-size: 80%;
   background-position: center center !important;
   background-repeat: no-repeat;
-  transform: rotate(90deg);
   background-color: transparent;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: solid transparent 0px;
   padding: 10px;
@@ -189,11 +188,10 @@ code {
 }
 
 .btn-right {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a1/Emoji_with_the_emo%21.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Map_arrow_black_e.svg/640px-Map_arrow_black_e.svg.png');
   background-size: 80%;
   background-position: center center !important;
   background-repeat: no-repeat;
-  transform: rotate(-90deg);
   background-color: transparent;
   width: 60px;
   height: 60px;
@@ -216,7 +214,8 @@ code {
   margin: 15px;
   position: relative;
   border-radius: 30px;
-  height: 100px;
+  height: 150px;
+  width: 150px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   cursor: pointer;
   transition: 0.4s;
