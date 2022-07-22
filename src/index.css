@@ -307,31 +307,29 @@ code {
   height: 100vh;
 }
 
-/***************************** MiPerfil *******************************/
-
 .perfil {
   text-align: center;
-  height: 40vh;
+  height: 45vh;
   width: 30vw;
-  border: solid #0097DC 5px;
   border-radius: 15px;
-  background: rgb(196, 239, 186);
-  margin: 10px;
-  box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
+  background: rgba(251, 252, 251, 0.651);
+  margin: 30px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   -webkit-box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
   position: relative;
 }
 
 .perfil:hover {
-  transition: all .2s ease-in-out;
-  transform: translateY(-10px);
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
 .foto-perfil {
   border-radius: 15px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .closemenu {
@@ -347,6 +345,10 @@ code {
   font-weight: bold;
 }
 
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:hover {
+  color: black !important; 
+}
+
 .pro-sidebar-header, .pro-sidebar-content, .pro-sidebar-footer {
   padding: 5%;
   border-bottom: 0px !important;
@@ -356,28 +358,31 @@ code {
   text-align: center;
   height: auto;
   width: 30vw;
-  border: solid #0097DC 5px;
   border-radius: 15px;
-  background: rgb(196, 239, 186);
-  margin: 10px;
-  box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
+  background: rgba(251, 252, 251, 0.651);
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);  
+  margin: 20px;
   -webkit-box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -8px 10px 5px 0px rgba(0,0,0,0.75);
   position: relative;
 }
 
+.pokemons h2{
+  text-transform: capitalize;
+  color: rgb(41, 40, 40);
+}
+
 .pokemons:hover {
-  transition: all .2s ease-in-out;
-  transform: translateY(-10px);
+  transform: scale(0.9, 0.9);
+  box-shadow: 4px 4px 25px 10px rgba(0,0,0,0.25), 
+    -4px -4px 25px 10px rgba(0,0,0,0.22);
 }
 
 .abilities {
-  background: #0097DC;
-  color: wheat;
+  background: rgba(251, 252, 251, 0.308);
+  color: rgb(43, 42, 42);
   border-radius: 0px 0px 10px 10px;
 }
-
-/********************************* Colors *********************************/
 
 .steel {
   background: #CCCCCC;

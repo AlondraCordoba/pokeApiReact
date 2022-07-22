@@ -39,11 +39,7 @@ const Sidebar = () => {
           <SidebarContent>
             <Menu iconShape="">
               <MenuItem onClick={(e) => window.location.href = '/'} icon={<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Pikachu_Barnstar.png/640px-Pikachu_Barnstar.png" width={25} height={25}/>}>{t("Pokemon")}</MenuItem>
-              <MenuItem onClick={(e) => window.location.href = '/191286'} icon={<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Users_icon.svg/640px-Users_icon.svg.png" width={25} height={25}/>}>{t("Mi Perfil")}</MenuItem>
-              <div style={{marginTop: '40px'}}>
-                <Button onClick={(e) => i18n.changeLanguage('en')}>EN</Button>
-                <Button onClick={(e) => i18n.changeLanguage('es')}>ES</Button>
-              </div>
+              <MenuItem onClick={(e) => window.location.href = '/191286'} icon={<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Users_icon.svg/640px-Users_icon.svg.png" width={25} height={25}/>}>{t("Acerca de")}</MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter className="center-a" style={{padding: '4% 15% 10% 15%'}}>
@@ -51,7 +47,9 @@ const Sidebar = () => {
               !menuCollapse && (
                 <>
                   {t("Wendy Cordoba")}<br/>
-                  {t("Poke Api")}
+                  {t("Poke Api")}<br/>
+                  <Button onClick={(e) => i18n.changeLanguage('es')}>ES</Button>
+                  <Button onClick={(e) => i18n.changeLanguage('en')}>EN</Button>
                 </>
               )
             }
