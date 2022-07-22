@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         width: '95%',
         fontFamily: 'Poppins',
         borderRadius: "10px",
-        background: "rgba(251, 252, 251, 0.808)",
+        background: "rgba(251, 252, 251, 0.650)",
         boxShadow: "5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22)",
         color: "#353535",
         padding: '0 3px',        
@@ -78,7 +78,7 @@ export function SearchConsumer(props) {
     const { search, setSearch } = useContext(ContextSearch);
     return(
         <div className="center-a" style={{paddingTop: '100px'}}>
-          <TextField className={classes.textField} type="text" onChange={(e) => setSearch(e.target.value)}/>
+          <TextField className={classes.textField} type="text" onChange={(e) => setSearch(e.target.value)} placeholder="Poke"/>
         </div>
     )
 }

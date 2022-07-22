@@ -46,8 +46,6 @@ const Sidebar = () => {
             {
               !menuCollapse && (
                 <>
-                  {t("Wendy Cordoba")}<br/>
-                  {t("Poke Api")}<br/>
                   <Button onClick={(e) => i18n.changeLanguage('es')}>ES</Button>
                   <Button onClick={(e) => i18n.changeLanguage('en')}>EN</Button>
                 </>
